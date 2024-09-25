@@ -40,3 +40,7 @@ burger.addEventListener("click", ()=>{
 })
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 990b6568d0889a10ba779812d25ee8fca76d813b
