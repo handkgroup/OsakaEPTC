@@ -60,11 +60,7 @@
     min-width: calc(850px + 17.4rem); /* Skroll zonasi uchun kenglikni oshiramiz */
   }
 }
-@media (max-width: 960px) {
-  .header-top {
-    /* position: fixed; */
-  }
-}
+
 @media (max-width: 900px) {
   .header-top {
     min-width: calc(850px + 17.4rem); /* Skroll zonasi uchun kenglikni oshiramiz */
