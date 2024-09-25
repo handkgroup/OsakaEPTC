@@ -12,25 +12,25 @@ html {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1440px) {
     html {
         font-size: 56.25%;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     html {
         font-size: 50%;
     }
 }
 
-@media(max-width: 425px) {
+@media(max-width:768px) {
     html {
         font-size: 43.5%;
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 428px) {
     html {
         font-size: 37.5%;
     }
