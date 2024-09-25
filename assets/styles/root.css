@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -58,4 +59,5 @@ html {
     --unnamed-color-003276: #003276;
     --unnamed-color-a8a8a8: #A8A8A8;
     --unnamed-color-86868b: #86868B;
+    --font-family: "Inter", sans-serif;
 }
