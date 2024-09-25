@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    const questions = document.querySelectorAll('.question');
 
-    toggleButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const answer = button.closest('.faq-item').querySelector('.answer');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.closest('.faq-item').querySelector('.answer');
+            const button = question.querySelector('.toggle-btn');
             if (answer.style.display === 'block') {
                 answer.style.display = 'none';
                 button.textContent = '+';
