@@ -178,7 +178,7 @@
 
 .cards-box-footer-f {
     text-align: left;
-    font: normal normal 600 18px/34px Noto Sans JP;
+    font: normal normal 600 1.8rem/3.4rem Noto Sans JP;
     letter-spacing: 0px;
     color: #000000;
     width: 100%;
@@ -209,7 +209,6 @@
     .card-f {
         gap: 1rem;
         width: 90%;
-        height: 66rem;
     }
     .card-content-f {
         padding: 2rem 2rem 2rem 2rem;
