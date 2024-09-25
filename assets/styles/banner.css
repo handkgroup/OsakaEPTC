@@ -1,33 +1,35 @@
-.banner {
+.banner .wrapper {
     position: relative;
     width: 100%;
     max-height: 83rem;
     overflow: hidden;
+    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
+    border-radius: 2rem;
 }
 
-.banner .bg_txt {
+.banner .wrapper .bg_txt {
     width: 98%;
     position: absolute;
 }
 
-.banner .wrapper {
+.banner .wrapper .for_txt {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: 5;
 }
 
-.banner .wrapper h6 {
+.banner .wrapper .for_txt h6 {
     font-size: 4.6rem;
     font-weight: bold;
     grid-area: h6;
 }
 
-.banner .wrapper h6 span {
+.banner .wrapper .for_txt h6 span {
     width: fit-content;
     display: block;
     font-size: 1.6rem;
