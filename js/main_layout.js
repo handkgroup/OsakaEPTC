@@ -40,12 +40,7 @@ burger.addEventListener("click", ()=>{
 })
 
 
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
->>>>>>> 990b6568d0889a10ba779812d25ee8fca76d813b
-=======
 
 
 
@@ -107,4 +102,4 @@ closeLink.addEventListener('click', function() {
 
 
 
->>>>>>> eafc0e1 (Khurshid)
+
