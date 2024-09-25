@@ -70,22 +70,10 @@
                 />
                 <input type="text" placeholder="サイト内検索" />
               </div>
-              <div class="open-campus-btn">
-                <img
-                  class="school-icon"
-                  src="../assets/icons/school (2).svg"
-                  alt=""
-                />
-                <a href="#">オープンキャンパス</a>
-              </div>
-              <div class="request-btn">
-                <img
-                  class="books-icon"
-                  src="../assets/icons/books.svg"
-                  alt=""
-                />
-                <a href="#">資料請求</a>
-              </div>
+                
+              <a class="open-campus-btn" href="#"><img class="school-icon" src="../assets/icons/school (2).svg" alt=""/>オープンキャンパス</a>
+                
+              <a class="request-btn" href="#"><img class="books-icon" src="../assets/icons/books.svg" alt="">資料請求</a>
             </div>
           </ul>
 
@@ -257,8 +245,11 @@
 
       <div class="off_screen-menu">
         <ul>
-          <li><a href="">選ばれる理由</a>
-            <ul>
+          <li>
+            <!-- <span class="open-link" id="open-link">選ばれる理由 <img class="plus" src="../assets/icons/plus.svg" alt=""></span> -->
+            <a class="open-link" id="open-link" href="">選ばれる理由 <img class="plus" src="../assets/icons/plus.svg" alt=""></a>
+            <a class="close-link" id="close-link" href="">選ばれる理由 <img class="minus" src="../assets/icons/minus.svg" alt=""></a>
+            <ul class="inside-links" id="inside-links" >
               <li><a href="">人×AI×ロボット</a></li>
               <li><a href="">講師陣のサポート</a></li>
               <li><a href="">心と技術を育てる教育理念</a></li>
@@ -268,9 +259,130 @@
               <li><a href="">編入実績</a></li>
             </ul>
           </li>
-          <li><a href="">学科・コース紹介</a></li>
-          <li><a href="">資格取得・就職支援</a></li>
-          <li><a href="">入試・学費案内</a></li>
+          <li>
+            <a class="open-link" id="open-link" href="">学科・コース紹介 <img class="plus" src="../assets/icons/plus.svg" alt=""></a>
+            <a class="close-link" id="close-link" href="">学科・コース紹介 <img class="minus" src="../assets/icons/minus.svg" alt=""></a>
+            <div class="dropdown_item">
+              <a class="item-first-link" href="">情報エンジニア学科 <span>IT領域</span></a>         
+              <ul>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/labtop.svg" alt="" />ITコース
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/file.svg" alt="" />ネットワークコース	
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/key.svg" alt="" />パソコンメンテコース	
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="open-link" id="open-link" href="">資格取得・就職支援 <img class="plus" src="../assets/icons/plus.svg" alt=""></a>
+            <a class="close-link" id="close-link" href="">資格取得・就職支援 <img class="minus" src="../assets/icons/minus.svg" alt=""></a>
+            <div class="dropdown_item">  
+              <a class="item-first-link" href="">情報エンジニア学科 <span>デザイン領域</span></a>        
+              <ul>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/game.svg" alt="" />プロダクトデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/boy.svg" alt="" />Webデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/girl.svg" alt="" />グラフィックデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          </li>
+            <div class="dropdown_item">  
+              <a class="item-first-link" href="">情報エンジニア学科 <span>デザイン領域</span></a>       
+              <ul>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/game.svg" alt="" />プロダクトデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/boy.svg" alt="" />Webデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="">
+                    <p>
+                      <img src="../assets/icons/girl.svg" alt="" />グラフィックデザインコース		
+                    </p>
+                    <img
+                      class="arrow-down-left"
+                      src="../assets/icons/arrow-down-left.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <div class="navbar-btns">
             <div class="open-campus-btn">
               <img
