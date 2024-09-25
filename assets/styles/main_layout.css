@@ -128,7 +128,7 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  width: 2rem;
+  width: 3rem;
   padding-left: 1rem;
 }
 
@@ -160,7 +160,7 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  width: 2rem;
+  width: 3rem;
   padding: 0 2rem 0 2.1rem;
 }
 
@@ -455,7 +455,7 @@
   display: none;
   margin-left: auto;
   position: relative;
-  padding: 2.5rem 3rem;
+  padding: 2.7rem 3rem;
   cursor: pointer;
   background: #000;
 }
@@ -719,6 +719,12 @@
 @media (min-width: 960px) {
   .off_screen-menu.active {
     transform: translate(100%, 100%);
+  }
+}
+@media (max-width: 520px) {
+  .off_screen-menu {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
