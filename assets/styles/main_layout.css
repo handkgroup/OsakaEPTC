@@ -389,6 +389,8 @@
   padding: 0.7rem;
 }
 
+
+
 @media (max-width: 1540px) {
   .navbar .top_navbar .open-campus-btn, .request-btn{
     font-size: 1.2rem;
