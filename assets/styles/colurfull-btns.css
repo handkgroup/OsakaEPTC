@@ -1,0 +1,74 @@
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 8rem;
+    gap: 2rem;
+}
+
+.scroll-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    flex: 0 0 auto;
+    width: 43rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    scroll-snap-align: start;
+    box-shadow: 0.4rem 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+}
+
+.scroll-item:nth-child(4n+1) {
+    background-color: #DFF3F5;
+}
+
+.scroll-item:nth-child(4n+2) {
+    background-color: #F9F7D9;
+}
+
+.scroll-item:nth-child(4n+3) {
+    background-color: #E8DFF9;
+}
+
+.scroll-item:nth-child(4n+4) {
+    background-color: #D4F5D7;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.item-image {
+    width: 10rem;
+    height: auto;
+}
+
+.texts-scroll-item h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.texts-scroll-item p {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.small-icon {
+    width: 3rem;
+}
+
+.scroll-container {
+    scroll-behavior: smooth;
+}
