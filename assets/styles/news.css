@@ -2,7 +2,7 @@
     max-width: 192rem;
     display: flex;
     margin: 0 auto;
-    padding: 8rem 8rem 8rem 16rem;
+    padding: 8rem 16rem;
     gap: 8rem;
     justify-content: space-between;
 }
@@ -84,11 +84,11 @@
     width: calc(100% + 8rem);
     display: flex;
     justify-content: flex-start;
-    overflow-x: auto; 
-    overflow-y: hidden; 
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: 1rem;
-    padding: 1rem 0; 
-    white-space: nowrap; 
+    padding: 1rem 0;
+    white-space: nowrap;
     scrollbar-width: none;
 }
 
@@ -113,7 +113,6 @@
     color: #FFFFFF;
 }
 
-
 .news-items {
     display: flex;
     flex-direction: column;
@@ -134,7 +133,7 @@
     gap: 2rem;
     min-width: fit-content;
 }
-    
+
 .news-item span {
     text-align: left;
     font: normal normal normal 13px/47px Noto Sans JP;
@@ -171,7 +170,7 @@
 @media (max-width: 960px) {
     .news-section {
         margin: 0 auto;
-        padding: 6rem 6rem;
+        padding: 4rem 1rem;
         flex-direction: column;
     }
     .news-links-top {
