@@ -4,7 +4,7 @@
     display: flex;
     margin: 0 auto;
     gap: 8rem;
-    padding: 10rem 5rem;
+    padding: 8rem 8rem 8rem 16rem;
 }
 
 .faq-title {
@@ -148,17 +148,16 @@
 .faq-toggle-button {
     position: absolute;
     z-index: 3;
-    top: 50%; /* Center vertically */
-    right: 1rem; /* Adjust as needed */
-    transform: translateY(-50%); /* Shift up by half its height */
+    top: 50%;
+    right: 1rem; 
+    transform: translateY(-50%);
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    background: #F0F0F0 0% 0% no-repeat padding-box;
 }
 
 .plus-sign-faq {
@@ -180,6 +179,7 @@
 
 @media (max-width:960px) {
     .faq-section {
+        padding: 4rem 1rem;
         flex-direction: column;
         gap: 5rem;
     }
