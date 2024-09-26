@@ -464,12 +464,12 @@
 /* Burger starts here */
 
 .navbar .burger_menu {
-  width: 2rem;
+  width: 2.5rem;
   height: 2rem;
   display: none;
   margin-left: auto;
   position: relative;
-  padding: 2.7rem 3rem;
+  padding: 3rem 3rem;
   cursor: pointer;
   background: #000;
 }
