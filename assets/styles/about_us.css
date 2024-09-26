@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     background: linear-gradient(to right, #F8E2E5, #FCF4FB, #E6F8ED);
-    max-height: 83rem;
     overflow: hidden;
     display: flex;
     align-items: center;
