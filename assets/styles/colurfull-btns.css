@@ -22,17 +22,6 @@
 }
 
 
-/* .scroll-container::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 0.5rem;
-}
-
-.scroll-container::-webkit-scrollbar-track {
-    background: #E0E0E0;
-    border-radius: 0.5rem;
-} */
-
-
 /* Custom scrollbar */
 
 .custom-scrollbar {
@@ -41,9 +30,7 @@
     background: #E0E0E0;
     border-radius: 0.5rem;
     width: 80%;
-    /* Set to 80% of the container's width */
     margin: 0 auto;
-    /* Center it */
     bottom: 0;
     left: 0;
     right: 0;
@@ -57,9 +44,7 @@
     border-radius: 0.5rem;
     height: 100%;
     width: 20%;
-    /* This controls the thumb size */
     transition: width 0.3s ease;
-    /* Optional hover effect */
 }
 
 .scroll-item {
