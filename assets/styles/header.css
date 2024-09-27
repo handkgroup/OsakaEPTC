@@ -785,7 +785,7 @@
     .bottom_navbar_btns .open_campus_btn {
         background: transparent linear-gradient(90deg, #06008e 0%, #9e08b7 100%) 0% 0% no-repeat padding-box;
         border-radius: 7rem;
-        padding: 1.4rem 2.1rem;
+        padding: 1.4rem 0;
         width: 40%;
         opacity: 1;
         font-size: 1.4rem;
