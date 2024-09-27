@@ -12,7 +12,7 @@
     gap: 2rem;
     scroll-behavior: smooth;
     padding-bottom: 4.3rem;
-        padding: 8rem 0 8rem 16rem;
+        padding: 8rem 4rem 8rem 16rem;
 
 }
 
@@ -140,7 +140,7 @@
 }
 
 @media (max-width:520px) {
-    .colorfull-btns {
-        padding: 4rem 0 4rem 4rem;
+    .scroll-container { 
+        padding: 4rem 4rem 4rem 4rem;
     }
 }
