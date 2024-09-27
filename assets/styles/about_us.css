@@ -84,13 +84,11 @@
     width: 85%;
 }
 
-.about_us .wrapper .bg_line span:last-child {
-    margin-top: 1rem;
-}
-
 .about_us .wrapper .bg_line span img {
-    margin: 1rem;
+    position: relative;
+    transform: translateY(15%);
     max-width: 6.1rem;
+    width: 100%;
 }
 
 .about_us .wrapper .only_txt {
@@ -98,6 +96,7 @@
     font-weight: normal;
     max-width: 69rem;
     grid-area: only_txt;
+    line-height: 3.8rem;
 }
 
 
