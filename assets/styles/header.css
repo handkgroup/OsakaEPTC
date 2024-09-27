@@ -244,11 +244,11 @@
 }
 
 .navbar_container .top_navbar ul .act_clr:hover {
-    border-bottom: .1rem solid #fff;
+    border-bottom: .2rem solid #fff;
 }
 
 .navbar_container .top_navbar ul .dropdown_link .act_clr:hover {
-    border-bottom: .1rem solid #000;
+    border-bottom: .2rem solid #000;
 }
 
 .navbar .dropdown_menu {
@@ -595,7 +595,7 @@
 /* off_screen-menu started here */
 
 .off_screen-menu {
-    max-width: 45rem;
+    /* max-width: 45rem; */
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -723,39 +723,53 @@
     }
 }
 
-.off_screen-menu ul .navbar-btns {
+.off_screen-menu .off_navbar_btns {
+    margin-top: 3rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+    padding: 1rem 0;
 }
 
-.off_screen-menu ul .navbar-btns .open-campus-btn {
+.off_screen-menu .off_navbar_btns .open_campus_btn {
     background: transparent linear-gradient(90deg, #06008e 0%, #9e08b7 100%) 0% 0% no-repeat padding-box;
     border-radius: 7rem;
-    padding: 1.4rem 2.1rem;
+    padding: 1.4rem 0;
+    width: 40%;
     opacity: 1;
     font-size: 1.4rem;
-    font-family: Noto Sans JP;
     color: var(--unnamed-color-ffffff);
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
-.off_screen-menu ul .navbar-btns .request-btn {
+.off_screen-menu .off_navbar_btns .request_btn {
+    width: 30%;
     border-radius: 7rem;
     padding: 1.4rem 2.1rem;
     background: var(--unnamed-color-fdfd30) 0% 0% no-repeat padding-box;
     opacity: 1;
     font-size: 1.4rem;
-    font-family: Noto Sans JP;
     color: var(--unnamed-color-000000);
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+}
+
+.off_screen-menu .off_navbar_btns .line_btn {
+    width: 7rem;
+    height: auto;
+}
+
+.off_screen-menu .off_navbar_btns .line_btn img {
+    width: 100%;
 }
 
 
@@ -771,7 +785,7 @@
 }
 
 @media (max-width: 960px) {
-    .bottom_navbar_btns {
+    .bottom_navbar_btns.active {
         width: 100%;
         position: fixed;
         bottom: 0;
@@ -781,6 +795,9 @@
         background: rgba(0, 0, 0, 0.6);
         padding: 1rem 0;
         z-index: 1000;
+    }
+    .bottom_navbar_btns {
+        display: none;
     }
     .bottom_navbar_btns .open_campus_btn {
         background: transparent linear-gradient(90deg, #06008e 0%, #9e08b7 100%) 0% 0% no-repeat padding-box;
