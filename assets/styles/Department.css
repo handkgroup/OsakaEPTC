@@ -50,6 +50,7 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 4rem;
+    
 }
 
 .dc-course-cards::-webkit-scrollbar {
