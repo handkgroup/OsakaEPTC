@@ -1,9 +1,10 @@
+
 .faq-section {
     max-width: 192rem;
     display: flex;
     margin: 0 auto;
     gap: 8rem;
-    padding: 0 16rem;
+    padding: 8rem 8rem 8rem 16rem;
 }
 
 .faq-title {
@@ -69,6 +70,7 @@
     font-size: 2.2rem;
 }
 
+
 .faq-items {
     display: flex;
     flex-direction: column;
@@ -103,6 +105,7 @@
     gap: 1rem;
 }
 
+
 .question-text {
     display: flex;
     align-items: center;
@@ -115,7 +118,7 @@
     font: normal normal bold 1.8rem/3.1rem Noto Sans JP;
     letter-spacing: 0px;
     color: #000000;
-    padding-right: 5.2rem;
+    padding-right: 5.2rem; 
 }
 
 .q-label {
@@ -146,7 +149,7 @@
     position: absolute;
     z-index: 3;
     top: 50%;
-    right: 1rem;
+    right: 1rem; 
     transform: translateY(-50%);
     width: 4rem;
     height: 4rem;
@@ -174,23 +177,17 @@
     transform: rotate(0deg);
 }
 
-<<<<<<< HEAD
 .vertical-faq.rotated {
     transform: rotate(90deg);
 }
 
-
-
-
-
-=======
->>>>>>> 82f8408d4bb874f94d0f8bda07f641bb285a3c0a
 @media (max-width:960px) {
     .faq-section {
-        padding: 0rem 1rem;
+        padding: 4rem 1rem;
         flex-direction: column;
         gap: 5rem;
     }
+    
     .faq-title {
         justify-content: center;
         align-items: center;

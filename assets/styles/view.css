@@ -15,7 +15,7 @@ h1 {
     text-align: center;
 }
 
-a>.dropbtn {
+.dropbtn {
     background-color: #ffffff;
     border: none;
     color: rgb(0, 0, 0);
@@ -29,25 +29,25 @@ a>.dropbtn {
     justify-content: center;
 }
 
-a>.dropbtn>img {
+.dropbtn > img {
     width: 2.1rem;
     height: 2.1rem;
     position: relative;
     z-index: 1;
-    padding: -5rem 0rem;
+    padding: 0; /* Changed from -5rem */
 }
 
 .viewers {
-    margin-top: 14rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 8rem;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
 }
 
-.viewers>.view_wrap {
+.viewers > .view_wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,21 +56,21 @@ a>.dropbtn>img {
     margin: 0 auto;
 }
 
-.view_wrap>.title {
+.view_wrap > .title {
     display: flex;
     flex-direction: column;
 }
 
-.title>p {
+.title > p {
     text-align: center;
 }
 
-.title>.blinfo {
+.title > .blinfo {
     display: grid;
     gap: 1.6rem;
 }
 
-.blinfo>.blue {
+.blinfo > .blue {
     justify-self: center;
     padding: .4rem 1.7rem;
     background-color: #120291;
@@ -78,26 +78,27 @@ a>.dropbtn>img {
     text-align: center;
 }
 
-.view_wrap>.slider {
+.view_wrap > .slider {
     display: flex;
     flex-direction: row;
     gap: 2.2rem;
-    width: 100%;
-    /* height: 48.5rem; */
     justify-content: center;
-    overflow-x: scroll;
+    padding-bottom: 2rem;
 }
 
-.slider>.sl_cont {
+.slider > .sl_cont {
     display: grid;
     max-width: 48.5rem;
     width: 100%;
 }
 
-.slider>#one {
+.slider > #one, 
+.slider > #two, 
+.slider > #three {
     height: 48.5rem;
-    width: 48.5rem;
-    background-image: url(../images/Stud_grl.svg), linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
+    width: 32%;
+    max-width: 48.5rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
     background-blend-mode: overlay;
     border-radius: 20px;
     background-size: cover;
@@ -105,29 +106,19 @@ a>.dropbtn>img {
     background-repeat: no-repeat;
 }
 
-.slider>#two {
-    height: 48.5rem;
-    width: 48.5rem;
-    background-image: url(../images/smile_man.svg), linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
-    background-blend-mode: overlay;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.slider > #one {
+    background-image: url(../images/Stud_grl.svg), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
 }
 
-.slider>#three {
-    height: 48.5rem;
-    width: 48.5rem;
-    background-image: url(../images/contest.svg), linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
-    background-blend-mode: overlay;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.slider > #two {
+    background-image: url(../images/smile_man.svg), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
 }
 
-.slider>.sl_cont>.txtNbtn {
+.slider > #three {
+    background-image: url(../images/contest.svg), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(137, 38, 176, 0.2), rgba(18, 24, 145, 0.8));
+}
+
+.slider > .sl_cont > .txtNbtn {
     display: flex;
     flex-direction: row;
     gap: 2.2rem;
@@ -137,26 +128,28 @@ a>.dropbtn>img {
     padding: 2rem 3rem;
 }
 
-.txtNbtn>.txt {
-    width: 35.5rem;
-    /* height: 48.5rem; */
+.txtNbtn > .txt {
+    width: 100%;
 }
 
-.txtNbtn>.txt>p {
+.txtNbtn > .txt > p {
     font-size: 1.6rem;
     color: white;
 }
 
-.txt>h2 {
+.txt > h2 {
     font-size: 3.2rem;
     color: white;
 }
 
 .card {
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.view_wrap>.stud_rel>.btn_wrapper {
+.view_wrap > .stud_rel > .btn_wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -164,186 +157,98 @@ a>.dropbtn>img {
     justify-content: center;
 }
 
-.btn_wrapper>.bttns>p {
+.btn_wrapper > .bttns > p {
     font-size: 1.6rem;
 }
 
-.btn_wrapper>.bttns {
+.btn_wrapper > .bttns {
     max-width: 38.6rem;
     max-height: 8.6rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    /* gap: 14.6rem; */
-    box-shadow: 1px 1px 1px grey;
+    box-shadow: 0px 3px 8px #0000001A;
     padding: 2rem;
     border-radius: 0.5rem;
     font-size: 1.6rem;
     justify-content: space-around;
 }
 
-.bttns>button {
+.bttns > button {
     max-width: 3.4rem;
     max-height: 3.4rem;
     width: 100%;
-    /* height: 100%; */
     background-color: transparent;
     border-radius: 5px;
     border: 0.05rem solid black;
 }
 
-.bttns>button:hover {
-    max-width: 3.4rem;
-    max-height: 3.4rem;
-    width: 100%;
-    /* height: 100%; */
+.bttns > button:hover {
     background-color: black;
     cursor: pointer;
-    border-radius: 5px;
-    border: 0.05rem solid black;
     color: white;
 }
 
-.bttns>.btn_txt {
+.bttns > .btn_txt {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     width: 100%;
 }
 
-.btn_txt>#icons {
+.btn_txt > #icons {
     font-size: 2.8rem;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
+    .slider > #one,
+    .slider > #two,
+    .slider > #three {
+        height: 48.5rem;
+        width: 48.5rem;
+        min-width: 48.5rem;
+    }
+
     .viewers {
         max-width: 960px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
+        padding: 8rem;
     }
-    .view_wrap>.slider {
-        display: flex;
-        flex-direction: row;
-        gap: 2.2rem;
-        /* max-width: 48.5rem; */
-        width: 100%;
-        /* height: 48.5rem; */
+
+    .view_wrap > .slider {
+        width: calc(100% + 8rem);
         justify-content: start;
         overflow-x: auto;
         white-space: nowrap;
+        padding-right: 4rem;
     }
-    .view_wrap>.stud_rel>.btn_wrapper {
-        width: 100%;
-        display: flex;
+    
+    .view_wrap > .stud_rel > .btn_wrapper {
         flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
     }
-    .btn_wrapper>.bttns {
+    .btn_wrapper > .bttns {
         max-width: 100%;
-        max-height: 8.6rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        /* gap: 14.6rem; */
-        box-shadow: 1px 1px 1px grey;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.6rem;
-        justify-content: space-around;
     }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
     .viewers {
         max-width: 520px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
+        padding: 4rem;
     }
-    .view_wrap>.slider {
-        display: flex;
-        flex-direction: row;
-        gap: 2.2rem;
-        /* max-width: 48.5rem; */
-        width: 100%;
-        /* height: 48.5rem; */
-        justify-content: start;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    .view_wrap>.stud_rel>.btn_wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-    }
-    .btn_wrapper>.bttns {
-        max-width: 100%;
-        max-height: 8.6rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        /* gap: 14.6rem; */
-        box-shadow: 1px 1px 1px grey;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.6rem;
-        justify-content: space-around;
+    
+    .view_wrap > .slider {
+        width: calc(100% + 4rem);
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .viewers {
         max-width: 320px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         padding: 2rem;
     }
-    .view_wrap>.slider {
-        display: flex;
-        flex-direction: row;
-        gap: 2.2rem;
-        /* max-width: 48.5rem; */
-        width: 100%;
-        /* height: 48.5rem; */
-        justify-content: start;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    .view_wrap>.stud_rel>.btn_wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-    }
-    .btn_wrapper>.bttns {
-        max-width: 100%;
-        max-height: 8.6rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        /* gap: 14.6rem; */
-        box-shadow: 1px 1px 1px grey;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.6rem;
-        justify-content: space-around;
+    
+    .view_wrap > .slider {
+        width: calc(100% + 2rem);
     }
 }
