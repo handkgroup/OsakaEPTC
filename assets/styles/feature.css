@@ -3,12 +3,12 @@
 }
 
 .features {
-    max-width: 192rem;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8rem 0rem 8rem 8rem;;
+    padding: 8rem 0rem 8rem 8rem;
     gap: 5rem;
 }
 
@@ -185,13 +185,12 @@
 
 @media (max-width: 960px) {
     .features {
-        padding: 6rem 0rem 6rem 4rem;;
+        padding: 6rem 0rem 6rem 1rem;
+        ;
     }
-
     .top-title h2 {
         font: normal normal bold 3rem/3.5rem Noto Sans JP;
     }
-    
     .top-title-f h2::before {
         position: relative;
         display: none;
@@ -199,13 +198,12 @@
     .top-title-f h2 {
         text-align: center;
     }
-    .top-title-f h2 br{
+    .top-title-f h2 br {
         display: block;
     }
     .feature-cards {
         gap: 2rem;
     }
-    
     .card-f {
         gap: 1rem;
         width: 90%;
@@ -219,7 +217,6 @@
     .card-content-f p {
         font: normal normal bold 3rem Noto Sans JP;
     }
-
     .plus-button-box-f {
         width: 5rem;
         height: 5rem;
@@ -249,6 +246,7 @@
 
 @media (max-width:520px) {
     .features {
-        padding: 4rem 0rem 4rem 1rem;;
+        padding: 4rem 0rem 4rem 1rem;
+        ;
     }
 }

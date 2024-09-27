@@ -1,222 +1,233 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .two_cards {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
 }
-.two_cards > .tc_wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 6rem;
-  justify-content: center;
+
+.two_cards>.tc_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
 }
+
+
 /* .tc_wrapper > .kard {
 } */
-.tc_wrapper > #bir {
-  display: grid;
-  max-width: 72rem;
-  height: 54rem;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(../images/writer.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  border-radius: 7%;
-  background-size: cover;
+
+.tc_wrapper>#bir {
+    display: grid;
+    max-width: 72rem;
+    height: 54rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/writer.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 7%;
+    background-size: cover;
 }
-.tc_wrapper > #ikki {
-  display: grid;
-  max-width: 72rem;
-  height: 54rem;
-  width: 100%;
-  background-image: linear-gradient(
-    320deg,
-    rgba(217, 60, 101, 1) 0%,
-    rgba(253, 253, 48, 1) 100%
-  );
-  background-position: bottom;
-  background-repeat: no-repeat;
-  border-radius: 7%;
+
+.tc_wrapper>#ikki {
+    display: grid;
+    max-width: 72rem;
+    height: 54rem;
+    width: 100%;
+    background-image: linear-gradient( 320deg, rgba(217, 60, 101, 1) 0%, rgba(253, 253, 48, 1) 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 7%;
 }
-.kard > .in_kard {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  padding: 6% 0rem;
-  gap: 2.5rem;
-}
-.in_kard > .taytl {
-  text-align: center;
-  line-height: 5.5rem;
-  font-family: "Inter", sans-serif;
-}
-.in_kard > .taytl > .op_tit {
-  font-size: 4.6rem;
-  opacity: 0.3;
-  color: white;
-}
-.in_kard > .taytl > .nop_tit {
-  font-size: 5.7rem;
-  font-family: "Noto Sans JP", sans-serif;
-  color: white;
-}
-.in_kard > .xtxs {
-  font-size: 1.6rem;
-  text-align: center;
-  color: white;
-  line-height: 3.4rem;
-}
-.xtxs > img {
-  width: 34.2rem;
-  height: 25.5rem;
-}
-#bir > .pls_btn {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-self: center;
-  padding: 6% 6% 0%;
-}
-#ikki > .pls_btn {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-self: center;
-  padding: 6% 6% 0%;
-}
-.pls_btn > a {
-  max-height: 6rem;
-  max-width: 6rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  align-self: center;
-  border: none;
-}
-.pls_btn > a > button {
-  max-height: 6rem;
-  max-width: 6rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  align-self: center;
-  border: none;
-  font-size: 5rem;
-}
-.xtxs>p{
-    font-size: 1.6rem;
-}
-.xtxs > .image {
-  display: flex;
-  position: absolute;
-  max-width: 60rem;
-  width: 100%;
-  height: 25rem;
-}
-.image > img {
-  padding: 0% 0% 5%;
-  width: 100%;
-  height: 25rem;
-  max-width: 60rem;
-}
-@media screen and (max-width: 960px) {
-  .two_cards > .tc_wrapper {
+
+.kard>.in_kard {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
-    margin: 0 auto;
-  }
-  .xtxs > .image {
+    justify-self: center;
+    padding: 6% 0rem;
+    gap: 2.5rem;
+}
+
+.in_kard>.taytl {
+    text-align: center;
+    line-height: 5.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.in_kard>.taytl>.op_tit {
+    font-size: 4.6rem;
+    opacity: 0.3;
+    color: white;
+}
+
+.in_kard>.taytl>.nop_tit {
+    font-size: 5.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    color: white;
+}
+
+.in_kard>.xtxs {
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    line-height: 3.4rem;
+}
+
+.xtxs>img {
+    width: 34.2rem;
+    height: 25.5rem;
+}
+
+#bir>.pls_btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    padding: 6% 6% 0%;
+}
+
+#ikki>.pls_btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    padding: 6% 6% 0%;
+}
+
+.pls_btn>a {
+    max-height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    align-self: center;
+    border: none;
+}
+
+.pls_btn>a>button {
+    max-height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    align-self: center;
+    border: none;
+    font-size: 5rem;
+}
+
+.xtxs>p {
+    font-size: 1.6rem;
+}
+
+.xtxs>.image {
     display: flex;
     position: absolute;
     max-width: 60rem;
     width: 100%;
     height: 25rem;
-  }
-  .image > img {
+}
+
+.image>img {
     padding: 0% 0% 5%;
     width: 100%;
     height: 25rem;
     max-width: 60rem;
-  }
-  .in_kard > .xtxs {
-    font-size: 1.6rem;
-    text-align: center;
-    color: white;
-    line-height: 3.4rem;
-  }
-  .xtxs>p{
-    font-size: 1.6rem;
 }
+
+@media screen and (max-width: 960px) {
+    .two_cards>.tc_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin: 0 auto;
+    }
+    .xtxs>.image {
+        display: flex;
+        position: absolute;
+        max-width: 60rem;
+        width: 100%;
+        height: 25rem;
+    }
+    .image>img {
+        padding: 0% 0% 5%;
+        width: 100%;
+        height: 25rem;
+        max-width: 60rem;
+    }
+    .in_kard>.xtxs {
+        font-size: 1.6rem;
+        text-align: center;
+        color: white;
+        line-height: 3.4rem;
+    }
+    .xtxs>p {
+        font-size: 1.6rem;
+    }
 }
+
 @media screen and (max-width: 520px) {
-    .two_cards > .tc_wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
-      margin: 0 auto;
+    .two_cards>.tc_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin: 0 auto;
     }
-    .xtxs > .image {
-      display: flex;
-      position: absolute;
-      max-width: 60rem;
-      width: 100%;
-      height: 25rem;
+    .xtxs>.image {
+        display: flex;
+        position: absolute;
+        max-width: 60rem;
+        width: 100%;
+        height: 25rem;
     }
-    .image > img {
-      padding: 0% 0% 5%;
-      width: 100%;
-      height: 25rem;
-      max-width: 60rem;
+    .image>img {
+        padding: 0% 0% 5%;
+        width: 100%;
+        height: 25rem;
+        max-width: 60rem;
     }
-    .in_kard > .xtxs {
+    .in_kard>.xtxs {
         font-size: 1.6rem;
         text-align: center;
         color: white;
         line-height: 3.4rem;
-      }
-      .xtxs>p{
+    }
+    .xtxs>p {
         font-size: 1.6rem;
     }
-  }
-  @media screen and (max-width: 320px) {
-    .two_cards > .tc_wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
-      margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+    .two_cards>.tc_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin: 0 auto;
     }
-    .xtxs > .image {
-      display: flex;
-      position: absolute;
-      max-width: 60rem;
-      width: 100%;
-      height: 25rem;
+    .xtxs>.image {
+        display: flex;
+        position: absolute;
+        max-width: 60rem;
+        width: 100%;
+        height: 25rem;
     }
-    .image > img {
-      padding: 0% 0% 5%;
-      width: 100%;
-      height: 25rem;
-      max-width: 60rem;
+    .image>img {
+        padding: 0% 0% 5%;
+        width: 100%;
+        height: 25rem;
+        max-width: 60rem;
     }
-    .in_kard > .xtxs{
+    .in_kard>.xtxs {
         font-size: 1.6rem;
         text-align: center;
         color: white;
         line-height: 3.4rem;
-      }
-      .xtxs>p{
+    }
+    .xtxs>p {
         font-size: 1.6rem;
     }
-  }
+}

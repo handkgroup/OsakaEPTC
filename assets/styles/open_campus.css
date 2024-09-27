@@ -1,4 +1,4 @@
-.open_campus {
+/* .open_campus {
     width: 100%;
     background: linear-gradient(to bottom right, #F8EDFD, #CAE9FD, #D9D9FF);
     display: flex;
@@ -8,4 +8,132 @@
 
 .open_campus .bg_img {
     width: 90%;
+} */
+
+.open-campus {
+    background: linear-gradient(to bottom right, #F8EDFD, #CAE9FD, #D9D9FF);
+    display: flex;
+    justify-content: center;
+    padding: 14rem 14rem 7rem;
 }
+
+.open-campus .wrapper {
+    max-width: 270rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.open-campus .wrapper .highlight {
+    width: fit-content;
+    position: relative;
+    font-size: 4.6rem;
+    font-weight: bold;
+    margin: 0 auto;
+    z-index: 2;
+    /* Ensure the text is above the ::before pseudo-element */
+}
+
+.open-campus .wrapper .highlight::before {
+    position: absolute;
+    content: "";
+    background: #FDFD30;
+    width: 100%;
+    height: 1.8rem;
+    left: 0;
+    bottom: .5rem;
+    z-index: -1;
+    /* Place the background behind the text */
+}
+
+.open-campus .wrapper .image-row {
+    width: 100%;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    /* Ensure image is on top of the card */
+}
+
+.open-campus .wrapper .image-row img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 290rem;
+    transition: all 0.3s ease;
+    /* opacity: 0.9; */
+    /* Optional: Add slight transparency to see the card */
+}
+
+.open-campus .wrapper .center-card {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    z-index: 1;
+    /* Ensure card is behind the image */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.open-campus .wrapper .center-card .card-top {
+    position: relative;
+    background: black;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: bold;
+    border-radius: 50rem;
+    text-align: center;
+    transform: translateY(-100%);
+    width: 80%;
+}
+
+.open-campus .wrapper .center-card .next-event .txt1 {
+    background-color: #0052D5;
+    font-family: 2.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.open-campus .wrapper .event-info {
+    margin-top: 10px;
+}
+
+.sign-up-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-up-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Query for Smaller Screens */
+
+@media (max-width: 1740px) {
+    .center-card {
+        width: 50%;
+    }
+}
+
+
+/* @media (max-width: 1024px) {
+    .center-card {
+        width: 50%;
+    }
+} */
