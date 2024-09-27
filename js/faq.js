@@ -4,14 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     questions.forEach(question => {
         question.addEventListener('click', () => {
             const answer = question.closest('.faq-item').querySelector('.answer');
-            const button = question.querySelector('.toggle-btn');
+            const button = question.querySelector('.faq-toggle-button');
+            const horizontal = button.querySelector('.horizontal-faq');
+            const vertical = button.querySelector('.vertical-faq');
+            
             if (answer.style.display === 'block') {
                 answer.style.display = 'none';
-                button.textContent = '+';
+                vertical.classList.remove('rotated'); 
             } else {
                 answer.style.display = 'block';
-                button.textContent = '-';
+                vertical.classList.add('rotated'); 
             }
+
+            horizontal.style.display = 'block'; 
         });
     });
 });

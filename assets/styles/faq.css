@@ -162,6 +162,7 @@
 
 .plus-sign-faq {
     background-color: #000;
+    transition: transform 0.3s ease;
 }
 
 .plus-sign-faq.horizontal-faq {
@@ -173,7 +174,14 @@
     width: 0.2rem;
     height: 1.8rem;
     position: absolute;
+    transform: rotate(0deg);
 }
+
+.vertical-faq.rotated {
+    transform: rotate(90deg);
+}
+
+
 
 
 
