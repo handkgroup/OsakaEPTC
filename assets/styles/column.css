@@ -175,11 +175,13 @@
         /* height: 48.5rem; */
         justify-content: center;
     }
+    
     .column_wrapper>.top_part {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .top_part>a>button {
         flex-wrap: wrap;
         /* width: 19.2rem; */
