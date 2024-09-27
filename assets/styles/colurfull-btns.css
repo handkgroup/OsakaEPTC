@@ -12,7 +12,7 @@
     gap: 2rem;
     scroll-behavior: smooth;
     padding-bottom: 4.3rem;
-        padding: 8rem 4rem 8rem 16rem;
+    padding: 8rem 4rem 8rem 16rem;
 
 }
 
@@ -37,7 +37,6 @@
     left: 0;
     right: 0;
 }
-
 
 /* Custom scrollbar thumb */
 
