@@ -1,5 +1,5 @@
 .news-section {
-    max-width: 192rem;
+    width: 100%;
     display: flex;
     margin: 0 auto;
     padding: 8rem 16rem;
@@ -81,22 +81,17 @@
 }
 
 .news-links-top {
-    width: calc(100% + 8rem);
     display: flex;
     justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
     gap: 1rem;
     padding: 1rem 0;
-    white-space: nowrap;
-    scrollbar-width: none;
 }
 
 .news-links-top a {
     background: #F3F3F6;
     border-radius: 100px;
     text-align: left;
-    font: bold 15px/19px Noto Sans JP;
+    font: bold 1.5rem Noto Sans JP;
     color: #000000;
     padding: 1.4rem 3.6rem;
     min-height: fit-content;
@@ -173,9 +168,6 @@
         padding: 4rem 1rem;
         flex-direction: column;
     }
-    .news-links-top {
-        width: calc(100% + 6rem);
-    }
     .news-title {
         align-items: center;
         gap: 3rem;
@@ -203,8 +195,5 @@
 @media (max-width: 520px) {
     .news-section {
         padding: 4rem;
-    }
-    .news-links-top {
-        width: calc(100% + 4rem);
     }
 }

@@ -2,16 +2,18 @@
 
 // Select all elements with the act_clr class
 const dropdown = document.querySelector(".dropdown_link");
+const bottomHeader = document.querySelector(".bottom_navbar_btns");
 const dropdownMenu = document.querySelector(".dropdown_menu");
 const navbarContainer = document.querySelector(".navbar_container");
 const navbarLinks = document.querySelectorAll(".act_clr");
 const burger = document.querySelector(".burger_menu");
 const offScreenMenu = document.querySelector(".off_screen-menu");
-const logoNormal = document.querySelector(".navbar-logo"); // Normal logo
-const logoActive = document.querySelector(".navbar-logo2"); // Active logo
+const logoNormal = document.querySelector(".navbar-logo");
+const logoActive = document.querySelector(".navbar-logo2");
 
 dropdown.addEventListener("mouseenter", () => {
     // Open the dropdown menu and apply styles
+    dropdownMenu.classList.add("active");
     dropdownMenu.classList.add("active");
     navbarContainer.classList.add("active");
     navbarContainer.style.backgroundColor = "#fff"; // Change background color to white
@@ -72,6 +74,7 @@ dropdownMenu.addEventListener("mouseleave", () => {
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
+    bottomHeader.classList.toggle("active");
 });
 
 
