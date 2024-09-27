@@ -178,7 +178,7 @@
     transform: rotate(90deg);
 }
 
-.faq-list-btn-2 {
+.faq-title-2 {
     display: none;
 }
 
@@ -203,7 +203,14 @@
     .faq-list-btn {
         display: none;
     }
-
+    
+    .faq-title-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        text-align: center;
+    }
     .faq-list-btn-2 {
         display: flex;
         align-items: center;
