@@ -1,27 +1,16 @@
-/* .open_campus {
-    width: 100%;
-    background: linear-gradient(to bottom right, #F8EDFD, #CAE9FD, #D9D9FF);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.open_campus .bg_img {
-    width: 90%;
-} */
-
 .open-campus {
     background: linear-gradient(to bottom right, #F8EDFD, #CAE9FD, #D9D9FF);
     display: flex;
     justify-content: center;
-    padding: 14rem 14rem 7rem;
+    padding: 14rem 7rem 7rem;
 }
 
 .open-campus .wrapper {
-    max-width: 270rem;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .open-campus .wrapper .highlight {
@@ -31,7 +20,6 @@
     font-weight: bold;
     margin: 0 auto;
     z-index: 2;
-    /* Ensure the text is above the ::before pseudo-element */
 }
 
 .open-campus .wrapper .highlight::before {
@@ -43,45 +31,41 @@
     left: 0;
     bottom: .5rem;
     z-index: -1;
-    /* Place the background behind the text */
 }
 
 .open-campus .wrapper .image-row {
     width: 100%;
-    height: 100%;
     width: fit-content;
     position: relative;
     z-index: 2;
-    /* Ensure image is on top of the card */
 }
 
 .open-campus .wrapper .image-row img {
     position: relative;
     width: 100%;
-    height: auto;
-    max-width: 290rem;
     transition: all 0.3s ease;
-    /* opacity: 0.9; */
-    /* Optional: Add slight transparency to see the card */
 }
 
 .open-campus .wrapper .center-card {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 67%;
+    left: 52%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 2rem 0 5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 80rem;
     z-index: 1;
-    /* Ensure card is behind the image */
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.open-campus .wrapper .center-card .next_event {
+    width: 80%;
 }
 
 .open-campus .wrapper .center-card .card-top {
@@ -92,48 +76,126 @@
     font-weight: bold;
     border-radius: 50rem;
     text-align: center;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     width: 80%;
 }
 
-.open-campus .wrapper .center-card .next-event .txt1 {
+
+/* 
+.open-campus .wrapper .center-card .next_event {
+    height: fit-content;
+    border: .1rem solid #0052D5;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.open-campus .wrapper .center-card .next_event .txt1 {
     background-color: #0052D5;
-    font-family: 2.9rem;
+    font-size: 2.9rem;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
+    padding: 4rem;
 }
+
+.open-campus .wrapper .center-card .next_event .txt2 {
+    color: #0052D5;
+    font-size: 8.4rem;
+    font-weight: bold;
+}
+
+.open-campus .wrapper .center-card .next_event .txt3 {
+    color: #0052D5;
+    font-size: 1.9rem;
+    border: .1rem solid #0052D5;
+    padding: .2rem .7rem;
+}
+
+.open-campus .wrapper .center-card .next_event .txt4 {
+    color: #0052D5;
+    font-size: 4.5rem;
+    font-weight: bold;
+} */
 
 .open-campus .wrapper .event-info {
-    margin-top: 10px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
-.sign-up-button {
-    background-color: #007bff;
+.open-campus .wrapper .event-info .sign-up-button {
+    background: linear-gradient(to right, #110091, #9409B3);
     color: white;
-    padding: 10px 20px;
+    padding: 1rem 6rem;
+    font-size: 1.9rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 5rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.sign-up-button:hover {
-    background-color: #0056b3;
+.open-campus .wrapper .event-info .sign-up-button img {
+    width: 3rem;
+}
+
+.open-campus .wrapper .event-info .link {
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.open-campus .wrapper .event-info .link img {
+    width: 2rem;
 }
 
 
 /* Media Query for Smaller Screens */
 
-@media (max-width: 1740px) {
-    .center-card {
-        width: 50%;
+@media (max-width: 1770px) {
+    .open-campus .wrapper .center-card {
+        top: 60%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        scale: .7;
     }
 }
 
-
-/* @media (max-width: 1024px) {
-    .center-card {
-        width: 50%;
+@media (max-width: 1300px) {
+    .open-campus .wrapper .center-card {
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
     }
-} */
+}
+
+@media (min-width: 960px) {
+    .open-campus .wrapper .image-row .img2 {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .open-campus .wrapper .image-row {
+        width: 100%;
+        width: fit-content;
+        position: relative;
+        z-index: 2;
+    }
+    .open-campus .wrapper .image-row .img1 {
+        display: none;
+    }
+    .open-campus .wrapper .image-row .img2 {
+        display: block;
+        width: 80rem;
+    }
+}
