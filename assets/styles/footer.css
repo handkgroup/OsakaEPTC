@@ -15,13 +15,7 @@
     justify-content: center;
     margin: 0 auto;
     object-fit: cover;
-<<<<<<< HEAD
-    background: transparent url("../images/Screenshot\ 2024-09-20\ at\ 15.29.28.png") 0% 0% no-repeat padding-box;
-=======
-    background: transparent
-      url("../images/footer-backg-j.png") 0% 0% no-repeat
-      padding-box;
->>>>>>> d34f14d1eb1d8fa4e555b6f236d23badba63870c
+    background: transparent url("../images/footer-backg-j.png") 0% 0% no-repeat padding-box;
     width: 100%;
     opacity: 1;
     /* background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)) */
