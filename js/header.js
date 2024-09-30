@@ -82,7 +82,11 @@ burger.addEventListener("click", () => {
 
 
 
-const openLink = document.querySelector("#open-link");
-const closeLink = document.querySelector("#close-link");
+
+
+
+
+
+
 
 
