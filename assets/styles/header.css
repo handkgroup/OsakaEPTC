@@ -626,9 +626,9 @@
     gap: 1rem;
 }
 
-.off_screen-menu.active {
-   margin-bottom: 10rem;
-}
+/* .off_screen-menu .menu_main_ul {
+   margin-bottom: 55rem;
+} */
 
 .off_screen-menu ul .dropdown_link {
     display: flex;
