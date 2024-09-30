@@ -51,8 +51,8 @@
         height: auto;
     }
     .first_view .text_container {
-        align-items: center;
-        transform: translateY(-40%);
+        padding: 3rem;
+        left: 0;
         top: 90%;
     }
 }
